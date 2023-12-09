@@ -1,0 +1,140 @@
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    padding : 2rem 3rem;
+    width:90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    border-bottom-right-radius: 6rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.main-input {
+    display: flex;
+    gap:1.5rem; 
+    color :#716F6F; 
+}
+
+.age-input {
+    width :8rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+} 
+
+.main-devider {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom : 2rem;
+}
+
+
+.main-output {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.arrow-box {
+    position: absolute;
+    display: flex;
+    width: min-content;
+    padding:0.5rem;
+    border-radius: 50%;
+    background-color: #854DFF;
+    right: 0;
+    top:-1.8rem;
+}
+
+.arrow-box:active {
+    background-color: #151515;
+}
+
+
+input:focus {
+    outline-color: #854DFF;
+}
+
+.output-numbers {
+    color: #854DFF;
+    
+}
+
+.color-error {
+    color: #FF5959;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+.input-error-dd, .input-error-mm, .input-error-yy {
+    font-size: 0.75rem;
+    margin-top: 3px;
+    outline-color: #FF5959;
+}
+
+
+
+
+@media (max-width:600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .age-input {
+        width:6rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 8px;
+    }
+
+    .arrow-box {
+        left:0;
+        right:0;
+        margin :auto;
+        
+    }
+
+    .arrow-box img {
+        width:35px;
+    }
+}

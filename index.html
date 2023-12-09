@@ -1,0 +1,90 @@
+<!DO class="age-input"CTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      class="age-input"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./index.js"></script>
+    <div class="container">
+      <div class="main">
+        <div class="main-input">
+          <div class="main-input-dd">
+            <p class="uppercase">day</p>
+            <input class="age-input" onchange="validateDay(event)" type="text" placeholder="DD" />
+            <p class="color-error input-error-dd v-hidden">Must be a valid Day</p>
+          </div>
+          <div class="main-input-mm">
+            <p class="uppercase">month</p>
+            <input class="age-input" onchange="validateMonth(event)" type="text" placeholder="MM" />
+            <p class="color-error input-error-mm v-hidden">Must be a valid month</p>
+          </div>
+          <div class="main-input-yy">
+            <p class="uppercase">year</p>
+            <input class="age-input" onchange="validateYear(event)" type="text" placeholder="YYYY" />
+            <p class="color-error input-error-yy v-hidden">Must be in the past</p>
+          </div>
+        </div>
+        <div class="main-devider">
+          <hr />
+          <div class="arrow-box" onclick="calculateAge()">
+            <img src="./assets/images/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+        <div class="main-output">
+          <p><span class = "output-numbers output-number-yy">- -</span> years</p>
+          <p><span class = "output-numbers output-number-mm">- -</span> months</p>
+          <p><span class = "output-numbers output-number-dd">- -</span> days</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sunil Kumar</a>.
+    </div>
+  </body>
+</html>
